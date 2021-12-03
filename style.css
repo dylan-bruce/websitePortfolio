@@ -4,7 +4,7 @@ body {
 }
 header, footer {
   color: #DDD4BC;
-  background-color: #627C6D;
+  background: #627C6D;  /* <----------------- Changed background-color to the shorthand background for my revision to include background */
 }
 header, footer, main {
   text-align: center;
@@ -36,6 +36,7 @@ article {
 main > article > hr{
   border: 1px dashed #627C6D;
   width: 70%;
+  height: 5px;  /* <-----------------  Edit for my revision to include height.  Makes hr look like a rectangle instead of a line.*/
   margin-top: 25px;
   margin-bottom: 25px;
 }
@@ -43,6 +44,25 @@ img {
   width: 400px;
   align-self: center;
   border:5px solid #627C6D;
+}
+
+/* Pseudo-classes Links */  /* <--------- Had to add in pseudo-classes for revision */
+
+a:link {
+  color:#8A7E5D;
+  text-decoration: none;
+}
+a:visited {
+  color:rgb(116, 116, 116);
+  font-weight: bold;
+}
+a:hover {
+  color:#8A7E5D;
+  background: rgb(146, 194, 166);
+  font-weight: bold;
+}
+a:active{
+  color:#8A7E5D
 }
 
 /* Classes */
